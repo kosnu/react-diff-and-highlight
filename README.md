@@ -25,9 +25,9 @@ const b = `Hello\nReact\nWorld\nGoodbye!`;
 const highlights = ["React", "Goodbye!"];
 
 <DiffHighlighter
-  a={a}
-  b={b}
-  highlights={highlights}
+  original={a}
+  modified={b}
+  highlightWords={highlights}
 />;
 ```
 

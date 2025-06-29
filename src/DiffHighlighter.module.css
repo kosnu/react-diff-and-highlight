@@ -1,0 +1,53 @@
+.dh-root {
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.dh-line {
+  display: flex;
+  padding: 4px 8px;
+  min-height: 20px;
+  background-color: #ffffff;
+  border-left: 4px solid transparent;
+}
+
+.dh-line[data-line-type="added"] {
+  background-color: #e8f5e8;
+  border-left-color: #4caf50;
+}
+
+.dh-line[data-line-type="removed"] {
+  background-color: #ffeaea;
+  border-left-color: #f44336;
+}
+
+.dh-line-icon {
+  width: 20px;
+  color: #666;
+  text-align: center;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.dh-line-content {
+  flex: 1;
+  white-space: pre-wrap;
+}
+
+.dh-highlight {
+  padding: 0 2px;
+  border-radius: 2px;
+  /* NOTE: background-color は style で指定している */
+}
+
+.dh-highlight-added {
+  background-color: #c8e6c9;
+  padding: 0 2px;
+}
+
+.dh-highlight-removed {
+  background-color: #ffcdd2;
+  padding: 0 2px;
+  text-decoration: line-through;
+}
