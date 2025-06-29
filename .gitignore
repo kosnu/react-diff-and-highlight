@@ -1,0 +1,47 @@
+# Node
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Vite
+.vite/
+
+# Mac
+.DS_Store
+
+# Storybook
+storybook-static/
+
+# VSCode
+.vscode/
+
+# Test coverage
+coverage/
+
+# Misc
+*.local
+*.cache
+*.tmp
+
+# OS
+Thumbs.db
+
+# Dependency directories
+jspm_packages/
+
+# IDEs
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# TypeScript
+*.tsbuildinfo
+
+# Storybook build output
+out/
