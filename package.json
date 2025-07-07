@@ -36,7 +36,7 @@
     "@biomejs/biome": "2.0.6",
     "@storybook/addon-docs": "^9.0.14",
     "@storybook/addon-onboarding": "^9.0.14",
-    "@storybook/react-vite": "^9.0.14",
+    "@storybook/react-vite": "^9.0.15",
     "@types/diff": "^7.0.2",
     "@types/node": "^24.0.7",
     "@types/react": "^19.0.0",
