@@ -1,13 +1,35 @@
 # See https://docs.github.com/ja/code-security/dependabot/working-with-dependabot/enable-dependabot-version-updates for details
 version: 2
 updates:
+  # npm (JavaScript/TypeScript dependencies)
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "weekly"
-    open-pull-requests-limit: 5
+    open-pull-requests-limit: 10
     commit-message:
       prefix: "deps"
     labels:
       - "dependencies"
       - "npm"
+    groups:
+      dev-dependencies:
+        patterns:
+          - "*"
+        dependency-type: "development"
+      prod-dependencies:
+        patterns:
+          - "*"
+        dependency-type: "production"
+
+  # GitHub Actions dependencies
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
+    labels:
+      - "github-actions"
+      - "ci"
