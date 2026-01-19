@@ -48,6 +48,6 @@
     "vite-plugin-dts": "^4.0.0"
   },
   "dependencies": {
-    "diff": "^8.0.2"
+    "diff": "^8.0.3"
   }
 }
